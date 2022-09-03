@@ -8,14 +8,15 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Sam Almohanna | Creative Developer</title>
-        <meta name="description" content="Sam Almohanna - A creative web developer who is passionate about designing functional accessable digital products." />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name='description'
+          content='Sam Almohanna - A creative web developer who is passionate about designing functional accessable digital products.'
+        />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Sam
-        </h1>
+        <h1 className={styles.title}>Sam</h1>
         <h2>Almohanna</h2>
       </main>
     </div>
