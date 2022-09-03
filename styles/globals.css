@@ -21,6 +21,41 @@ a {
   }
   body {
     color: white;
-    background: black;
+    /* background: linear-gradient(-50deg, #8280EC 30%, #FFFCF2, #FFFCF2, #FFFCF2, #FE976F);
+    background-size: 200%; */
+    background-color:hsla(46,100%,97%,1);
+/* background-image:
+radial-gradient(at 72% 87%, hsla(37,15%,76%,1) 0px, transparent 50%),
+radial-gradient(at 93% 78%, hsla(241,73%,71%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(46,100%,97%,1) 0px, transparent 50%),
+radial-gradient(at 37% 100%, hsla(16,98%,71%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(46,100%,97%,1) 0px, transparent 50%),
+radial-gradient(at 87% 40%, hsla(16,94%,59%,1) 0px, transparent 50%),
+radial-gradient(at 98% 6%, hsla(46,100%,97%,1) 0px, transparent 50%),
+radial-gradient(at 38% 23%, hsla(241,56%,50%,1) 0px, transparent 50%),
+radial-gradient(at 25% 74%, hsla(46,100%,97%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(16,55%,50%,1) 0px, transparent 50%); */
+background-image:
+radial-gradient(at 59% 71%, hsla(46,100%,97%,1) 0px, transparent 50%),
+radial-gradient(at 100% 100%, hsla(241,73%,71%,1) 0px, transparent 30%),
+radial-gradient(at 80% 0%, hsla(46,100%,97%,1) 0px, transparent 50%),
+radial-gradient(at 94% 27%, hsla(16,98%,71%,1) 0px, transparent 40%),
+radial-gradient(at 31% 12%, hsla(46,100%,97%,1) 0px, transparent 50%),
+radial-gradient(at 31% 50%, hsla(46,100%,97%,1) 0px, transparent 50%),
+radial-gradient(at 6% 5%, hsla(241,56%,50%,1) 0px, transparent 30%),
+radial-gradient(at 18% 75%, hsla(46,100%,97%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(16,55%,50%,1) 0px, transparent 50%);
+  }
+
+  @keyframes movinggradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
