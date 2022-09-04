@@ -1,23 +1,20 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Content from '../components/layout/Content'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Sam Almohanna | Creative Developer</title>
         <meta
           name='description'
           content='Sam Almohanna - A creative web developer who is passionate about designing functional accessable digital products.'
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.svg' />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Sam</h1>
-        <h2>Almohanna</h2>
-      </main>
+      <Content />
     </div>
   )
 }
