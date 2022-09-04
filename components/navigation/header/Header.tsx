@@ -1,16 +1,37 @@
-import { Flex } from '@chakra-ui/react'
-import { FunctionComponent } from 'react'
+import { Stack } from '@chakra-ui/react'
+import { useEffect, useState } from 'react'
 import Logo from '../../logo/Logo'
 import NavLinks from '../navLinks/NavLinks'
 
 interface HeaderProps {}
 
-const Header: FunctionComponent<HeaderProps> = () => {
+const Header: React.FunctionComponent<HeaderProps> = () => {
+  const [scroll, setScroll] = useState(false)
+
+  const handleScroll = () => {
+    document.body.scrollTop > 80 || document.documentElement.scrollTop > 80
+      ? setScroll(true)
+      : setScroll(false)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+  })
+
   return (
-    <Flex direction={'row'} align={'center'} justifyContent={'space-between'}>
+    <Stack
+      direction={'row'}
+      alignItems='center'
+      justifyContent='space-between'
+      position='fixed'
+      width='full'
+      p={['2rem', '2rem', '2rem 5rem', '2rem 7rem']}
+      height={1}
+      bg={scroll ? 'lightPurple' : 'transparent'}
+    >
       <Logo />
       <NavLinks />
-    </Flex>
+    </Stack>
   )
 }
 
