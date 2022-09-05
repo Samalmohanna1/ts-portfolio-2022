@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700;800&family=Yeseva+One&display=swap');
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 251, 240);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(254, 147, 109);
+  border-radius: 1rem;
+  border: 2px solid rgb(254, 147, 109);
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(254, 147, 109);
+}
+
+.hero-gradient {
+  background-color: rgb(255, 251, 240);
+  background-image: radial-gradient(
+      at 14% 82%,
+      rgb(255, 251, 240) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 0%, rgb(255, 251, 240) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(56, 56, 199, 0.79) 0px, transparent 50%),
+    radial-gradient(at 81% 73%, rgb(255, 251, 240) 0px, transparent 50%),
+    radial-gradient(at 21% 6%, rgb(255, 251, 240) 0px, transparent 50%),
+    radial-gradient(at 3% 4%, rgb(254, 147, 109) 0px, transparent 50%),
+    radial-gradient(at 42% 0%, rgba(248, 105, 53, 0.6) 0px, transparent 50%),
+    radial-gradient(at 2% 65%, rgb(107, 102, 255) 0px, transparent 50%),
+    radial-gradient(at 53% 68%, rgb(255, 251, 240) 0px, transparent 50%);
+  background-size: 200%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}

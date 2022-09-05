@@ -10,7 +10,7 @@ const About: React.FunctionComponent<AboutProps> = () => {
       bgGradient='linear(to-tl, primaryPurple, lightPurple)'
     >
       <Text variant='subheading24Md' color='softBlack'>
-        About sam
+        About Sam
       </Text>
       <Stack
         direction={['column', 'column', 'column', 'row']}

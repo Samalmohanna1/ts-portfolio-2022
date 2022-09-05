@@ -39,7 +39,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
           date='2022'
           link='https://samalmohanna1.github.io/calculator-v3-demo/index.html'
           brief='When building a calculator tool it is easy to get caught up in formulas and lose sight of what really matters: Is it useful? 
-          Unless you are familiar with refinancing a car loan, the typical refinance calculator is overwhelming. The goal for this calculator was to make it simple and intuitive and useful.'
+          Unless you are familiar with refinancing a car loan, the typical refinance calculator is overwhelming. The goal for this calculator was to make it simple, intuitive, and useful.'
         />
         <ProjectBody
           details='The calculator was simplified by removing unnecessary inputs and utilizing the correct input types to ensure ease of use. Results are highlighted and displayed in a clear way.'
