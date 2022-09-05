@@ -18,7 +18,7 @@ export const HeadingStyles = {
     },
     heading36: {
       fontSize: '2.25rem',
-      lineHeight: '2.5rem',
+      lineHeight: '3rem',
     },
   },
   defaultProps: {
