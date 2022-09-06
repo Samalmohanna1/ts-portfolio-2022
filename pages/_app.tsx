@@ -8,12 +8,12 @@ import '../styles/theme/styles.css'
 import theme from '../styles/theme/theme'
 
 const GA_TRACKING_ID = process.env.GA_TRACKING_ID
-const HJID = process.env.HJID
-const HJSV = process.env.HJSV
+const HJID = Number(process.env.HJID)
+const HJSV = Number(process.env.HJSV)
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    hotjar.initialize(HJID, HJSV)
+    return hotjar.initialize(HJID, HJSV)
   }, [])
 
   return (
