@@ -30,7 +30,7 @@ const Portfolio: React.FunctionComponent<PortfolioProps> = () => {
         initial={'offscreen'}
         whileInView={'onscreen'}
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ staggerChildren: 0.6 }}
+        transition={{ staggerChildren: 0.65 }}
       >
         <Box p='4rem 0'>
           <motion.div variants={projectAnimate}>
@@ -65,8 +65,8 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
       <motion.div
         initial={'offscreen'}
         whileInView={'onscreen'}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ staggerChildren: 0.5 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ staggerChildren: 0.65 }}
       >
         <Box p='4rem 0'>
           <motion.div variants={projectAnimate}>
@@ -93,8 +93,8 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
       <motion.div
         initial={'offscreen'}
         whileInView={'onscreen'}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ staggerChildren: 0.5 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ staggerChildren: 0.65 }}
       >
         <Box p='4rem 0'>
           <motion.div variants={projectAnimate}>

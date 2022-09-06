@@ -1,13 +1,21 @@
 import { ChakraProvider, CSSReset } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
 import Script from 'next/script'
+import { useEffect } from 'react'
+import { hotjar } from 'react-hotjar'
 import Layout from '../components/layout/Layout'
 import '../styles/theme/styles.css'
 import theme from '../styles/theme/theme'
 
-const GA_TRACKING_ID = process.env.GTAG_MEASURMENT_ID
+const GA_TRACKING_ID = process.env.GA_TRACKING_ID
+const HJID = process.env.HJID
+const HJSV = process.env.HJSV
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    hotjar.initialize(HJID, HJSV)
+  }, [])
+
   return (
     <>
       <Script
