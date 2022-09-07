@@ -11,15 +11,14 @@ import theme from '../styles/theme/theme'
 const GA_TRACKING_ID = process.env.GA_TRACKING_ID
 const HJID = Number(process.env.HJID)
 const HJSV = Number(process.env.HJSV)
-const SEGMENT_WRITE_TOKEN = process.env.SEGMENT_WRITE_TOKEN
-const segment = AnalyticsBrowser.load({ writeKey: `${SEGMENT_WRITE_TOKEN}` })
+const SEGMENT_WRITE_TOKEN = String(process.env.SEGMENT_WRITE_TOKEN)
+const segment = AnalyticsBrowser.load({ writeKey: SEGMENT_WRITE_TOKEN })
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     hotjar.initialize(HJID, HJSV)
     segment.page('Page View')
   }, [segment])
-
   return (
     <>
       <Script
