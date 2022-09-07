@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     hotjar.initialize(HJID, HJSV)
     segment.page('Page View')
-  }, [segment])
+  }, [])
   return (
     <>
       <Script
