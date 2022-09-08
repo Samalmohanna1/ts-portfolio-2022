@@ -19,7 +19,12 @@ const About: React.FunctionComponent<AboutProps> = () => {
         p={['1.5rem 0', '2rem 0']}
       >
         <Box maxW='35rem'>
-          <Image src='profile-pic.png' alt='sam almohanna' width='sm' />
+          <Image
+            src='laser-eyes-profile-pic.gif'
+            alt='sam almohanna'
+            fallbackSrc='profile-pic.png'
+            width='sm'
+          />
         </Box>
         <Box
           maxW='32rem'
