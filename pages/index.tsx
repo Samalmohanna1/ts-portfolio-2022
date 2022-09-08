@@ -6,6 +6,20 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
+        <meta
+          property='og:title'
+          content='Sam Almohanna | Creative Developer'
+        />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://www.sam-almohanna.com' />
+        <meta property='og:image' content='laser-eyes.gif' />
+        <meta property='og:image:type' content='image/gif' />
+        <meta property='og:image:width' content='400' />
+        <meta property='og:image:height' content='300' />
+        <meta
+          property='og:image:alt'
+          content='Animated profile picture of Sam.'
+        />
         <title>Sam Almohanna | Creative Developer</title>
         <meta
           name='description'

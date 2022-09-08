@@ -28,6 +28,7 @@ const Header: React.FunctionComponent<HeaderProps> = () => {
       p={['2rem', '2rem', '2rem 5rem', '2rem 7rem']}
       height={1}
       bg={scroll ? 'lightPurple' : 'transparent'}
+      zIndex='999'
     >
       <Logo />
       <NavLinks />
