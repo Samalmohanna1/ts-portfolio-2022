@@ -1,10 +1,20 @@
 import { Image } from '@chakra-ui/react'
+import Link from 'next/link'
 import { FunctionComponent } from 'react'
 
 interface LogoProps {}
 
 const Logo: FunctionComponent<LogoProps> = () => {
-  return <Image src='/logo.svg' alt='Sam Almohanna Logo' maxW='3rem' />
+  return (
+    <Link href='/'>
+      <Image
+        src='/logo.svg'
+        alt='Sam Almohanna Logo'
+        maxW='3rem'
+        _hover={{ cursor: 'pointer' }}
+      />
+    </Link>
+  )
 }
 
 export default Logo

@@ -1,8 +1,25 @@
 import { Box, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 
 interface AboutProps {}
 
 const About: React.FunctionComponent<AboutProps> = () => {
+  const profilePicAnimate = {
+    offscreen: {
+      x: -10,
+      opacity: 0,
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      rotate: [0, -2, 2, -2, 2, 0],
+      transition: {
+        type: 'spring',
+        bounce: 0.3,
+        duration: 1,
+      },
+    },
+  }
   return (
     <Box
       id='aboutSection'
@@ -19,12 +36,20 @@ const About: React.FunctionComponent<AboutProps> = () => {
         p={['1.5rem 0', '2rem 0']}
       >
         <Box maxW='35rem'>
-          <Image
-            src='laser-eyes-profile-pic.gif'
-            alt='sam almohanna'
-            fallbackSrc='profile-pic.png'
-            width='sm'
-          />
+          <motion.div
+            variants={profilePicAnimate}
+            initial={'offscreen'}
+            whileInView={'onscreen'}
+            viewport={{ once: false, amount: 0.4 }}
+          >
+            <Image
+              src='laser-eyes-profile-pic.gif'
+              alt='sam almohanna'
+              fallbackSrc='profile-pic.png'
+              width='sm'
+              borderRadius={8}
+            />
+          </motion.div>
         </Box>
         <Box
           maxW='32rem'
