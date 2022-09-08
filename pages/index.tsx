@@ -19,8 +19,8 @@ const Home: NextPage = () => {
         <meta name='author' content='Sam Almohanna'></meta>
         <meta property='og:image' content='laser-eyes-profile-pic.gif' />
         <meta property='og:image:type' content='image/gif' />
-        <meta property='og:image:width' content='400' />
-        <meta property='og:image:height' content='300' />
+        <meta property='og:image:width' content='300' />
+        <meta property='og:image:height' content='396' />
         <meta
           property='og:image:alt'
           content='Animated profile picture of Sam.'

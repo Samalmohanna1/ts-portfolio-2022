@@ -46,6 +46,12 @@ export const TextStyles = {
         color: 'lightPurple',
       },
     },
+    interactiveHyperLink18Alt: {
+      fontSize: '1.125rem',
+      lineHeight: '2rem',
+      fontWeight: '500',
+      color: 'white',
+    },
   },
   defaultProps: {
     variant: 'paragraph18Rg',

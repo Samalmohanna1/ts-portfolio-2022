@@ -51,15 +51,20 @@ const ProjectHeader: React.FunctionComponent<ProjectHeaderProps> = ({
           </ListItem>
           <ListItem>
             {link && (
-              <Stack direction='row'>
-                <Text variant='subheading18Md'>
-                  <CircleListIcon />
-                  See it in action
-                </Text>
-                <Text variant='interactiveHyperLink18' color='darkPurple'>
-                  <Link href={link}>here</Link>
-                </Text>
-              </Stack>
+              <Link href={link} style={{ textDecoration: 'none' }}>
+                <Box
+                  bg='lightPurple'
+                  width={['full', 'fit-content']}
+                  textAlign={['center', 'left']}
+                  p='.6rem 2rem'
+                  m='.6rem 0 0 .3rem'
+                  borderRadius={8}
+                >
+                  <Text variant='interactiveHyperLink18Alt'>
+                    See it in action
+                  </Text>
+                </Box>
+              </Link>
             )}
           </ListItem>
         </List>
