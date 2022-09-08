@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <meta name='author' content='Sam Almohanna'></meta>
         <meta
           property='og:image'
-          content='https://github.com/Samalmohanna1/ts-portfolio-2022/blob/main/public/laser-eyes-profile-pic.gif?raw=true'
+          content='../public/laser-eyes-profile-pic.gif'
         />
         <meta property='og:image:type' content='image/gif' />
         <meta property='og:image:width' content='400' />
@@ -28,7 +28,10 @@ const Home: NextPage = () => {
           property='og:image:alt'
           content='Animated profile picture of Sam.'
         />
-        <meta name='twitter:card' content='laser-eyes.gif' />
+        <meta
+          name='twitter:card'
+          content='../public/laser-eyes-profile-pic.gif'
+        />
         <title>Sam Almohanna | Creative Developer</title>
         <meta
           name='description'
