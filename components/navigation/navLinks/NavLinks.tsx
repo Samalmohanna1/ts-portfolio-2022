@@ -1,19 +1,20 @@
-import { Link, Stack, Text } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react'
+import BtnLink from './BtnLink'
 
 interface NavLinksProps {}
 
 const NavLinks: React.FunctionComponent<NavLinksProps> = () => {
   return (
-    <Stack direction={'row'} spacing={8}>
-      <Text variant='interactiveNavItem18Bd'>
-        <Link href='#portfolioSection'>Portfolio</Link>
-      </Text>
-      <Text variant='interactiveNavItem18Bd'>
-        <Link href='#aboutSection'>About</Link>
-      </Text>
-      <Text variant='interactiveNavItem18Bd'>
-        <Link href='#contactSection'>Contact</Link>
-      </Text>
+    <Stack
+      direction={'row'}
+      spacing={[2, 8]}
+      justifyContent='center'
+      alignItems='center'
+      textAlign='center'
+    >
+      <BtnLink url='#portfolioSection' label='Portfolio' />
+      <BtnLink url='#aboutSection' label='About' />
+      <BtnLink url='#contactSection' label='Contact' />
     </Stack>
   )
 }

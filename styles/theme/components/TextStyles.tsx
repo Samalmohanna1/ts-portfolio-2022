@@ -34,9 +34,6 @@ export const TextStyles = {
       fontSize: '1.125rem',
       fontWeight: '600',
       lineHeight: '1.5rem',
-      _hover: {
-        color: 'lightOrange',
-      },
     },
     interactiveHyperLink18: {
       fontSize: '1.125rem',

@@ -54,6 +54,7 @@ const ProjectHeader: React.FunctionComponent<ProjectHeaderProps> = ({
               <Link href={link} style={{ textDecoration: 'none' }}>
                 <Box
                   bg='lightPurple'
+                  _hover={{ bg: 'darkPurple' }}
                   width={['full', 'fit-content']}
                   textAlign={['center', 'left']}
                   p='.6rem 2rem'
