@@ -22,6 +22,7 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
             <Link
               href='https://www.linkedin.com/in/sumayahalmohanna/'
               color='primaryOrange'
+              isExternal
             >
               Linkedin
             </Link>{' '}
@@ -30,7 +31,10 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
         </Box>
         <Box p='2rem 0'>
           <Stack direction='row' justifyContent='space-evenly' pb='2rem'>
-            <Link href='https://www.linkedin.com/in/sumayahalmohanna/'>
+            <Link
+              href='https://www.linkedin.com/in/sumayahalmohanna/'
+              isExternal
+            >
               <Icon fontSize='2.5em' color='primaryOrange'>
                 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'>
                   <path
@@ -40,7 +44,7 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
                 </svg>
               </Icon>
             </Link>
-            <Link href='https://github.com/samalmohanna1'>
+            <Link href='https://github.com/samalmohanna1' isExternal>
               <Icon fontSize='2.5rem' color='primaryOrange'>
                 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512'>
                   <path
@@ -50,7 +54,7 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
                 </svg>
               </Icon>
             </Link>
-            <Link href='https://dribbble.com/Sam_A'>
+            <Link href='https://dribbble.com/Sam_A' isExternal>
               <Icon fontSize='2.5rem' color='primaryOrange'>
                 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
                   <path

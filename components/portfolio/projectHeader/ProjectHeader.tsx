@@ -51,7 +51,7 @@ const ProjectHeader: React.FunctionComponent<ProjectHeaderProps> = ({
           </ListItem>
           <ListItem>
             {link && (
-              <Link href={link} style={{ textDecoration: 'none' }}>
+              <Link href={link} style={{ textDecoration: 'none' }} isExternal>
                 <Box
                   bg='lightPurple'
                   _hover={{ bg: 'darkPurple' }}

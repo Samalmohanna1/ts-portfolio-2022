@@ -12,10 +12,10 @@ const About: React.FunctionComponent<AboutProps> = () => {
     onscreen: {
       x: 0,
       opacity: 1,
-      rotate: [0, -2, 2, -2, 2, 0],
+      rotate: [0, -2, 2, -1, 1, 0],
       transition: {
         type: 'spring',
-        bounce: 0.3,
+        bounce: 0.4,
         duration: 1,
       },
     },
@@ -61,7 +61,7 @@ const About: React.FunctionComponent<AboutProps> = () => {
             enjoys chill beats and Earl Grey while problem solving.
           </Heading>
           <Heading variant='heading36' color='white'>
-            Sam is an empathetic Designer with over 6 years experience desinging
+            Sam is an empathetic Designer with over 6 years experience designing
             and developing digital products.
           </Heading>
         </Box>
