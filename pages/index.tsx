@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <meta property='og:type' content='website' />
         <meta
           property='og:description'
-          content='Sam Almohanna - A creative web developer who is passionate about designing functional accessable digital products.'
+          content='Sam Almohanna - A creative web developer who is passionate about designing functional accessible digital products.'
         />
         <meta property='og:url' content='https://www.sam-almohanna.com' />
         <meta name='author' content='Sam Almohanna'></meta>
