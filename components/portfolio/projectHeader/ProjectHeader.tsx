@@ -49,7 +49,7 @@ const ProjectHeader: React.FunctionComponent<ProjectHeaderProps> = ({
               {date}
             </Text>
           </ListItem>
-          <ListItem>
+          <ListItem width='fit-content'>
             {link && (
               <Link href={link} style={{ textDecoration: 'none' }} isExternal>
                 <Box

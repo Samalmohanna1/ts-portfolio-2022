@@ -17,17 +17,26 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
       >
         <Box p='2rem 0' textAlign={['center', 'center', 'center', 'left']}>
           <Heading variant='heading48'>Contact</Heading>
-          <Text color='white'>
-            Have questions? Reach out on{' '}
-            <Link
-              href='https://www.linkedin.com/in/sumayahalmohanna/'
-              color='primaryOrange'
-              isExternal
+          <Text color='white'>Have questions? Reach out today!</Text>
+          <Link
+            href='https://www.linkedin.com/in/sumayahalmohanna/'
+            style={{ textDecoration: 'none' }}
+            isExternal
+          >
+            <Box
+              bg='lightOrange'
+              _hover={{ bg: 'primaryOrange' }}
+              width={['full', 'fit-content']}
+              textAlign={['center', 'left']}
+              p='.6rem 2rem'
+              m='.6rem 0 0 0'
+              borderRadius={8}
             >
-              Linkedin
-            </Link>{' '}
-            today!
-          </Text>
+              <Text variant='interactiveNavItem18Bd' color='softBlack'>
+                Connect on Linkedin
+              </Text>
+            </Box>
+          </Link>
         </Box>
         <Box p='2rem 0'>
           <Stack direction='row' justifyContent='space-evenly' pb='2rem'>
@@ -75,3 +84,17 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
 }
 
 export default Footer
+
+{
+  /* <Text color='white'>
+            Have questions? Reach out on{' '}
+            <Link
+              href='https://www.linkedin.com/in/sumayahalmohanna/'
+              color='primaryOrange'
+              isExternal
+            >
+              Linkedin
+            </Link>{' '}
+            today!
+          </Text> */
+}

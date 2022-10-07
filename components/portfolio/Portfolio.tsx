@@ -45,18 +45,26 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
           </motion.div>
           <motion.div variants={projectAnimate}>
             <ProjectBody
+              title='Savings by Vehicle tool'
+              link='https://start.caribou.com'
               details='The tool allows visitors to look up savings based on a vehicles make and model.'
               img='fvbs-search.png'
               alt='find vehicles by savings search'
               layout={['column', 'column', 'column', 'row-reverse']}
+              projectId='1'
+              numOfSlides={5}
             />
           </motion.div>
           <motion.div variants={projectAnimate}>
             <ProjectBody
+              title='Savings by Vehicle tool'
+              link='https://start.caribou.com'
               details='When a vehicles make and model is selected the tool builds the requested page on demand and serves it.'
               img='fvbs-page.png'
               alt='find vehicles by savings page'
               layout={['column', 'column', 'column', 'row']}
+              projectId='1'
+              numOfSlides={5}
             />
           </motion.div>
         </Box>
@@ -81,10 +89,14 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
           </motion.div>
           <motion.div variants={projectAnimate}>
             <ProjectBody
+              title='Auto loan refinance calculator'
+              link='https://samalmohanna1.github.io/calculator-v3-demo/index.html'
               details='The calculator was simplified by removing unnecessary inputs and utilizing the correct input types to ensure ease of use. Results are highlighted and displayed in a clear way.'
               img='calculator.png'
               alt='Auto loan refinance calculator project'
               layout={['column', 'column', 'column', 'row-reverse']}
+              projectId='2'
+              numOfSlides={5}
             />
           </motion.div>
         </Box>
@@ -107,10 +119,13 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
           </motion.div>
           <motion.div variants={projectAnimate}>
             <ProjectBody
+              title='Custom code integrations'
               details='In my last role, I built custom drop-down menus, carousel sliders, forms, and more to maintain brand consistency and provide familiar interaction for users.'
               img='code-integrations.png'
               alt='Custom code integrations'
               layout={['column', 'column', 'column', 'row']}
+              projectId='3'
+              numOfSlides={1}
             />
           </motion.div>
         </Box>
