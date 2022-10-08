@@ -27,11 +27,11 @@ body {
       transparent 50%
     ),
     radial-gradient(at 80% 0%, rgb(255, 251, 240) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(56, 56, 199, 0.79) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(56, 56, 199, 0.79) 0px, transparent 80%),
     radial-gradient(at 81% 73%, rgb(255, 251, 240) 0px, transparent 50%),
-    radial-gradient(at 21% 6%, rgb(255, 251, 240) 0px, transparent 50%),
-    radial-gradient(at 3% 4%, rgb(254, 147, 109) 0px, transparent 50%),
-    radial-gradient(at 42% 0%, rgba(248, 105, 53, 0.6) 0px, transparent 50%),
+    radial-gradient(at 21% 6%, rgb(255, 251, 240) 0px, transparent 30%),
+    radial-gradient(at 3% 4%, rgb(254, 147, 109) 0px, transparent 70%),
+    radial-gradient(at 42% 0%, rgba(248, 105, 53, 0.6) 0px, transparent 70%),
     radial-gradient(at 2% 65%, rgb(107, 102, 255) 0px, transparent 50%),
     radial-gradient(at 53% 68%, rgb(255, 251, 240) 0px, transparent 50%);
   background-size: 200%;

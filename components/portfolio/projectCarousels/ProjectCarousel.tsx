@@ -26,7 +26,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={0}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='sbvt-imgs/sbvt-1.png'
               alt='portfolio project visuals'
             />
@@ -34,7 +34,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={1}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='sbvt-imgs/sbvt-2.png'
               alt='portfolio project visuals'
             />
@@ -42,7 +42,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={2}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='sbvt-imgs/sbvt-3.png'
               alt='portfolio project visuals'
             />
@@ -50,7 +50,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={3}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='sbvt-imgs/sbvt-4.png'
               alt='portfolio project visuals'
             />
@@ -58,7 +58,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={4}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='sbvt-imgs/sbvt-5.png'
               alt='portfolio project visuals'
             />
@@ -70,7 +70,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={0}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='rc-imgs/rc-1.png'
               alt='portfolio project visuals'
             />
@@ -78,7 +78,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={1}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='rc-imgs/rc-2.png'
               alt='portfolio project visuals'
             />
@@ -86,7 +86,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={2}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='rc-imgs/rc-3.png'
               alt='portfolio project visuals'
             />
@@ -94,7 +94,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={3}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='rc-imgs/rc-4.png'
               alt='portfolio project visuals'
             />
@@ -102,7 +102,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={4}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='rc-imgs/rc-5.png'
               alt='portfolio project visuals'
             />
@@ -115,7 +115,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           <Slide index={0}>
             <Image
               style={imgStyle}
-              hasMasterSpinner={false}
+              hasMasterSpinner={true}
               src='code-integrations.png'
               alt='portfolio project visuals'
             />
