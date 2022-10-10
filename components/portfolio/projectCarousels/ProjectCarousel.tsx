@@ -116,7 +116,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
             <Image
               style={imgStyle}
               hasMasterSpinner
-              src='code-integrations.png'
+              src='code-integrations.webp'
               alt='portfolio project visuals'
             />
           </Slide>
