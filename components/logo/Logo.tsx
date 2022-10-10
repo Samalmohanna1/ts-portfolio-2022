@@ -10,7 +10,8 @@ const Logo: FunctionComponent<LogoProps> = () => {
       <Image
         src='/logo.svg'
         alt='Sam Almohanna Logo'
-        maxW='3rem'
+        width='3rem'
+        height='3rem'
         _hover={{ cursor: 'pointer' }}
       />
     </Link>

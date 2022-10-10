@@ -29,7 +29,7 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
               width={['full', 'fit-content']}
               textAlign={['center', 'left']}
               p='.6rem 2rem'
-              m='.6rem 0 0 0'
+              m='.6rem 0rem'
               borderRadius={8}
             >
               <Text variant='interactiveNavItem18Bd' color='softBlack'>

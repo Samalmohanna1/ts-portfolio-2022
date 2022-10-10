@@ -48,7 +48,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
               title='Savings by Vehicle tool'
               link='https://start.caribou.com'
               details='The tool allows visitors to look up savings based on a vehicles make and model.'
-              img='fvbs-search.png'
+              img='fvbs-search.webp'
               alt='find vehicles by savings search'
               layout={['column', 'column', 'column', 'row-reverse']}
               projectId='1'
@@ -60,7 +60,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
               title='Savings by Vehicle tool'
               link='https://start.caribou.com'
               details='When a vehicles make and model is selected the tool builds the requested page on demand and serves it.'
-              img='fvbs-page.png'
+              img='fvbs-page.webp'
               alt='find vehicles by savings page'
               layout={['column', 'column', 'column', 'row']}
               projectId='1'
@@ -92,7 +92,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
               title='Auto loan refinance calculator'
               link='https://samalmohanna1.github.io/calculator-v3-demo/index.html'
               details='The calculator was simplified by removing unnecessary inputs and utilizing the correct input types to ensure ease of use. Results are highlighted and displayed in a clear way.'
-              img='calculator.png'
+              img='calculator.webp'
               alt='Auto loan refinance calculator project'
               layout={['column', 'column', 'column', 'row-reverse']}
               projectId='2'
@@ -121,7 +121,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
             <ProjectBody
               title='Custom code integrations'
               details='In my last role, I built custom drop-down menus, carousel sliders, forms, and more to maintain brand consistency and provide familiar interaction for users.'
-              img='code-integrations.png'
+              img='code-integrations.webp'
               alt='Custom code integrations'
               layout={['column', 'column', 'column', 'row']}
               projectId='3'

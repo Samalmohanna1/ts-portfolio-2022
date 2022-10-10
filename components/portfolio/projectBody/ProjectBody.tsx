@@ -62,7 +62,7 @@ const ProjectBody: React.FunctionComponent<ProjectBodyProps> = ({
         />
       </Box>
       <Box maxW='35rem' onClick={onOpen} _hover={{ cursor: 'pointer' }}>
-        <Image src={img} alt={alt} sizes='auto' />
+        <Image src={img} alt={alt} width='auto' height='auto' sizes='auto' />
       </Box>
 
       <Modal isOpen={isOpen} onClose={onClose} size={['lg', '5xl']} closeOnEsc>
