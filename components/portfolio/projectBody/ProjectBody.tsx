@@ -78,7 +78,7 @@ const ProjectBody: React.FunctionComponent<ProjectBodyProps> = ({
           <ModalHeader>
             <Heading p='2rem 0rem 1rem 0rem'>{title}</Heading>
           </ModalHeader>
-          <ModalCloseButton />
+          <ModalCloseButton size='lg' _hover={{ bg: 'lightOrange' }} />
           <ModalBody>
             <ProjectCarousel carouselId={projectId} numOfSlides={numOfSlides} />
           </ModalBody>
@@ -95,14 +95,18 @@ const ProjectBody: React.FunctionComponent<ProjectBodyProps> = ({
                 <Link href={link} style={{ textDecoration: 'none' }} isExternal>
                   <Box
                     bg='lightPurple'
-                    _hover={{ bg: 'darkPurple' }}
+                    color='white'
+                    _hover={{
+                      bg: 'lightOrange',
+                      color: 'softBlack',
+                    }}
                     width={['full', 'fit-content']}
                     textAlign={['center', 'left']}
                     p='.6rem 2rem'
                     m='.6rem 0 0 .3rem'
                     borderRadius={8}
                   >
-                    <Text variant='interactiveHyperLink18Alt'>
+                    <Text color='inherit' variant='interactiveHyperLink18Alt'>
                       See it in action
                     </Text>
                   </Box>

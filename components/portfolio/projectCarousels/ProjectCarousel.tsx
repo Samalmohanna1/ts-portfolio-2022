@@ -14,6 +14,13 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
     padding: '1rem',
   }
 
+  const sliderStyle = {
+    padding: '1rem',
+    width: '100%',
+    borderTop: '.125rem solid #403D39',
+    borderBottom: '.125rem solid #403D39',
+  }
+
   return (
     <CarouselProvider
       naturalSlideWidth={100}
@@ -22,7 +29,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
       visibleSlides={1.2}
     >
       {carouselId === '1' && (
-        <Slider>
+        <Slider style={sliderStyle}>
           <Slide index={0}>
             <Image
               style={imgStyle}
@@ -59,7 +66,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
             <Image
               style={imgStyle}
               hasMasterSpinner
-              src='sbvt-imgs/sbvt-5.png'
+              src='sbvt-imgs/sbvt-5.webp'
               alt='portfolio project visuals'
             />
           </Slide>
@@ -71,7 +78,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
             <Image
               style={imgStyle}
               hasMasterSpinner
-              src='rc-imgs/rc-1.png'
+              src='rc-imgs/rc-1.webp'
               alt='portfolio project visuals'
             />
           </Slide>
@@ -79,7 +86,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
             <Image
               style={imgStyle}
               hasMasterSpinner
-              src='rc-imgs/rc-2.png'
+              src='rc-imgs/rc-2.webp'
               alt='portfolio project visuals'
             />
           </Slide>
@@ -87,7 +94,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
             <Image
               style={imgStyle}
               hasMasterSpinner
-              src='rc-imgs/rc-3.png'
+              src='rc-imgs/rc-3.webp'
               alt='portfolio project visuals'
             />
           </Slide>
@@ -95,7 +102,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
             <Image
               style={imgStyle}
               hasMasterSpinner
-              src='rc-imgs/rc-4.png'
+              src='rc-imgs/rc-4.webp'
               alt='portfolio project visuals'
             />
           </Slide>
@@ -103,7 +110,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
             <Image
               style={imgStyle}
               hasMasterSpinner
-              src='rc-imgs/rc-5.png'
+              src='rc-imgs/rc-5.webp'
               alt='portfolio project visuals'
             />
           </Slide>
