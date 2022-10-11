@@ -45,7 +45,7 @@ const About: React.FunctionComponent<AboutProps> = () => {
             <Image
               src='laser-eyes-profile-pic.gif'
               alt='sam almohanna'
-              fallbackSrc='profile-pic.png'
+              fallbackSrc='profile-pic.webp'
               width='24rem'
               height='32.68rem'
               borderRadius={8}
