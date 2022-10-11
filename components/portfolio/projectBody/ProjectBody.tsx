@@ -61,7 +61,14 @@ const ProjectBody: React.FunctionComponent<ProjectBodyProps> = ({
           width={['', '', '', '', '4rem', '8rem', '12rem']}
         />
       </Box>
-      <Box maxW='35rem' onClick={onOpen} _hover={{ cursor: 'pointer' }}>
+      <Box
+        maxW='35rem'
+        onClick={onOpen}
+        _hover={{
+          cursor: 'pointer',
+          filter: 'drop-shadow(-1rem .4rem .3rem #8280EC)',
+        }}
+      >
         <Image src={img} alt={alt} width='auto' height='auto' sizes='auto' />
       </Box>
 

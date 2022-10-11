@@ -54,14 +54,18 @@ const ProjectHeader: React.FunctionComponent<ProjectHeaderProps> = ({
               <Link href={link} style={{ textDecoration: 'none' }} isExternal>
                 <Box
                   bg='lightPurple'
-                  _hover={{ bg: 'darkPurple' }}
+                  color='white'
+                  _hover={{
+                    bg: 'lightOrange',
+                    color: 'softBlack',
+                  }}
                   width={['full', 'fit-content']}
                   textAlign={['center', 'left']}
                   p='.6rem 2rem'
                   m='.6rem 0 0 .3rem'
                   borderRadius={8}
                 >
-                  <Text variant='interactiveHyperLink18Alt'>
+                  <Text color='inherit' variant='interactiveHyperLink18Alt'>
                     See it in action
                   </Text>
                 </Box>
