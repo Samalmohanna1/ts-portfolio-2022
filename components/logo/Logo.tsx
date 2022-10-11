@@ -6,7 +6,7 @@ interface LogoProps {}
 
 const Logo: FunctionComponent<LogoProps> = () => {
   return (
-    <Link href='/'>
+    <Link href='/' aria-label='Go to website root url'>
       <Image
         src='/logo.svg'
         alt='Sam Almohanna Logo'

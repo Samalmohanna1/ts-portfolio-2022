@@ -15,6 +15,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
+  font-display: swap;
   scrollbar-width: thin;
   scrollbar-color: rgb(254, 147, 109);
 }
