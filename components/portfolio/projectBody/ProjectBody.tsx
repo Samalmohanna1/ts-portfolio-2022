@@ -79,7 +79,7 @@ const ProjectBody: React.FunctionComponent<ProjectBodyProps> = ({
             <Heading p='2rem 0rem 1rem 0rem'>{title}</Heading>
           </ModalHeader>
           <ModalCloseButton size='lg' _hover={{ bg: 'lightOrange' }} />
-          <ModalBody>
+          <ModalBody _hover={{ cursor: 'pointer' }}>
             <ProjectCarousel carouselId={projectId} numOfSlides={numOfSlides} />
           </ModalBody>
 
