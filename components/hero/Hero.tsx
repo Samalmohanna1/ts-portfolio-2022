@@ -36,15 +36,13 @@ const Hero: React.FunctionComponent<HeroProps> = () => {
             <TypeAnimation
               cursor={false}
               sequence={[
-                'Creative Developer',
-                2000,
                 'Product Designer',
                 2000,
                 'UX Designer',
                 2000,
-                'Problem Solver',
+                'Creative Developer',
                 2000,
-                'UX Engineer',
+                'Problem Solver',
                 2000,
               ]}
               speed={60}

@@ -45,24 +45,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
           </motion.div>
           <motion.div variants={projectAnimate}>
             <ProjectBody
-              title='Savings by Vehicle tool'
-              link='https://start.caribou.com'
-              details='The tool allows visitors to look up savings based on a vehicles make and model.'
-              img='fvbs-search.webp'
-              alt='find vehicles by savings search'
-              layout={['column', 'column', 'column', 'row-reverse']}
-              projectId='1'
-              numOfSlides={5}
-            />
-          </motion.div>
-          <motion.div variants={projectAnimate}>
-            <ProjectBody
-              title='Savings by Vehicle tool'
-              link='https://start.caribou.com'
-              details='When a vehicles make and model is selected the tool builds the requested page on demand and serves it.'
-              img='fvbs-page.webp'
-              alt='find vehicles by savings page'
-              layout={['column', 'column', 'column', 'row']}
+              details='The tool allows visitors to look up savings based on a vehicles make and model. When a vehicles make and model is selected the tool builds the requested page on demand and serves it.'
               projectId='1'
               numOfSlides={5}
             />
@@ -73,7 +56,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
       <motion.div
         initial={'offscreen'}
         whileInView={'onscreen'}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ staggerChildren: 0.65 }}
       >
         <Box p='4rem 0'>
@@ -89,12 +72,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
           </motion.div>
           <motion.div variants={projectAnimate}>
             <ProjectBody
-              title='Auto loan refinance calculator'
-              link='https://samalmohanna1.github.io/calculator-v3-demo/index.html'
               details='The calculator was simplified by removing unnecessary inputs and utilizing the correct input types to ensure ease of use. Results are highlighted and displayed in a clear way.'
-              img='calculator.webp'
-              alt='Auto loan refinance calculator project'
-              layout={['column', 'column', 'column', 'row-reverse']}
               projectId='2'
               numOfSlides={5}
             />
@@ -105,7 +83,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
       <motion.div
         initial={'offscreen'}
         whileInView={'onscreen'}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ staggerChildren: 0.65 }}
       >
         <Box p='4rem 0'>
@@ -119,13 +97,9 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
           </motion.div>
           <motion.div variants={projectAnimate}>
             <ProjectBody
-              title='Custom code integrations'
               details='In my last role, I built custom drop-down menus, carousel sliders, forms, and more to maintain brand consistency and provide familiar interaction for users.'
-              img='code-integrations.webp'
-              alt='Custom code integrations'
-              layout={['column', 'column', 'column', 'row']}
               projectId='3'
-              numOfSlides={1}
+              numOfSlides={4}
             />
           </motion.div>
         </Box>

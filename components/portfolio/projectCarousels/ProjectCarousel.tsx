@@ -1,4 +1,4 @@
-import { Stack } from '@chakra-ui/react'
+import { Icon, Stack } from '@chakra-ui/react'
 import {
   ButtonBack,
   ButtonNext,
@@ -8,6 +8,7 @@ import {
   Slider,
 } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa'
 
 interface CarouselIdProp {
   carouselId: string
@@ -18,36 +19,19 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
   carouselId,
   numOfSlides,
 }) => {
-  const imgStyle = {
-    padding: '1rem',
-  }
-
-  const sliderStyle = {
-    padding: '1rem',
-    width: '100%',
-    borderTop: '.125rem solid #403D39',
-    borderBottom: '.125rem solid #403D39',
-  }
-
-  const arrowBtnStyles = {
-    color: '#403D39',
-    fontSize: '1.125rem',
-    fontWeight: '600',
-  }
-
   return (
     <CarouselProvider
-      naturalSlideWidth={100}
-      naturalSlideHeight={65}
+      naturalSlideWidth={723}
+      naturalSlideHeight={446}
       totalSlides={numOfSlides}
       visibleSlides={1.2}
       hasMasterSpinner
     >
       {carouselId === '1' && (
-        <Slider style={sliderStyle}>
+        <Slider className='carousel-slider'>
           <Slide index={0}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={true}
               src='sbvt-imgs/sbvt-1.webp'
               alt='portfolio project visuals'
@@ -55,7 +39,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           </Slide>
           <Slide index={1}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={false}
               src='sbvt-imgs/sbvt-2.webp'
               alt='portfolio project visuals'
@@ -63,7 +47,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           </Slide>
           <Slide index={2}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={false}
               src='sbvt-imgs/sbvt-3.webp'
               alt='portfolio project visuals'
@@ -71,7 +55,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           </Slide>
           <Slide index={3}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={false}
               src='sbvt-imgs/sbvt-4.webp'
               alt='portfolio project visuals'
@@ -79,7 +63,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           </Slide>
           <Slide index={4}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={false}
               src='sbvt-imgs/sbvt-5.webp'
               alt='portfolio project visuals'
@@ -88,10 +72,10 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
         </Slider>
       )}
       {carouselId === '2' && (
-        <Slider>
+        <Slider className='carousel-slider'>
           <Slide index={0}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={true}
               src='rc-imgs/rc-1.webp'
               alt='portfolio project visuals'
@@ -99,7 +83,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           </Slide>
           <Slide index={1}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={false}
               src='rc-imgs/rc-2.webp'
               alt='portfolio project visuals'
@@ -107,7 +91,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           </Slide>
           <Slide index={2}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={false}
               src='rc-imgs/rc-3.webp'
               alt='portfolio project visuals'
@@ -115,7 +99,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           </Slide>
           <Slide index={3}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={false}
               src='rc-imgs/rc-4.webp'
               alt='portfolio project visuals'
@@ -123,7 +107,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           </Slide>
           <Slide index={4}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={false}
               src='rc-imgs/rc-5.webp'
               alt='portfolio project visuals'
@@ -133,20 +117,58 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
       )}
 
       {carouselId === '3' && (
-        <Slider>
+        <Slider className='carousel-slider'>
           <Slide index={0}>
             <Image
-              style={imgStyle}
+              className='carousel-img'
               hasMasterSpinner={true}
-              src='code-integrations.webp'
+              src='ci-imgs/ci-1.webp'
+              alt='portfolio project visuals'
+            />
+          </Slide>
+          <Slide index={1}>
+            <Image
+              className='carousel-img'
+              hasMasterSpinner={true}
+              src='ci-imgs/ci-2.webp'
+              alt='portfolio project visuals'
+            />
+          </Slide>
+          <Slide index={2}>
+            <Image
+              className='carousel-img'
+              hasMasterSpinner={true}
+              src='ci-imgs/ci-3.webp'
+              alt='portfolio project visuals'
+            />
+          </Slide>
+          <Slide index={3}>
+            <Image
+              className='carousel-img'
+              hasMasterSpinner={true}
+              src='ci-imgs/ci-4.webp'
               alt='portfolio project visuals'
             />
           </Slide>
         </Slider>
       )}
       <Stack direction='row' justifyContent='space-between'>
-        <ButtonBack style={arrowBtnStyles}>Back</ButtonBack>
-        <ButtonNext style={arrowBtnStyles}>Next</ButtonNext>
+        <ButtonBack>
+          <Icon
+            as={FaArrowCircleLeft}
+            boxSize='3rem'
+            color='lightOrange'
+            _hover={{ color: 'primaryOrange' }}
+          />
+        </ButtonBack>
+        <ButtonNext>
+          <Icon
+            as={FaArrowCircleRight}
+            boxSize='3rem'
+            color='lightOrange'
+            _hover={{ color: 'primaryOrange' }}
+          />
+        </ButtonNext>
       </Stack>
     </CarouselProvider>
   )
