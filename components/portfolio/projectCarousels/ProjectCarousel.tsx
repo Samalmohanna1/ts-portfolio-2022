@@ -1,14 +1,7 @@
-import { Icon, Stack } from '@chakra-ui/react'
-import {
-  ButtonBack,
-  ButtonNext,
-  CarouselProvider,
-  Image,
-  Slide,
-  Slider,
-} from 'pure-react-carousel'
+import { Box, Stack } from '@chakra-ui/react'
+import { CarouselProvider, Image, Slide, Slider } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa'
+import { useRive } from 'rive-react'
 
 interface CarouselIdProp {
   carouselId: string
@@ -19,6 +12,11 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
   carouselId,
   numOfSlides,
 }) => {
+  const { RiveComponent } = useRive({
+    src: 'hand_gestures.riv',
+    animations: 'Swipe Left',
+    autoplay: true,
+  })
   return (
     <CarouselProvider
       naturalSlideWidth={723}
@@ -152,23 +150,10 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
           </Slide>
         </Slider>
       )}
-      <Stack direction='row' justifyContent='space-between'>
-        <ButtonBack>
-          <Icon
-            as={FaArrowCircleLeft}
-            boxSize='2.25rem'
-            color='lightOrange'
-            _hover={{ color: 'primaryOrange' }}
-          />
-        </ButtonBack>
-        <ButtonNext>
-          <Icon
-            as={FaArrowCircleRight}
-            boxSize='2.25rem'
-            color='lightOrange'
-            _hover={{ color: 'primaryOrange' }}
-          />
-        </ButtonNext>
+      <Stack direction='row' justifyContent='center'>
+        <Box boxSize='4rem'>
+          <RiveComponent />
+        </Box>
       </Stack>
     </CarouselProvider>
   )

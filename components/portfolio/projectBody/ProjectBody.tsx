@@ -1,6 +1,5 @@
 import { Box, Stack, Text } from '@chakra-ui/react'
 import ProjectCarousel from '../projectCarousels/ProjectCarousel'
-
 interface ProjectBodyProps {
   details: string
   projectId: string
