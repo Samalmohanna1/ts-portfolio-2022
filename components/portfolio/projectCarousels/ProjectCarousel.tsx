@@ -156,7 +156,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
         <ButtonBack>
           <Icon
             as={FaArrowCircleLeft}
-            boxSize='3rem'
+            boxSize='2.25rem'
             color='lightOrange'
             _hover={{ color: 'primaryOrange' }}
           />
@@ -164,7 +164,7 @@ const ProjectCarousel: React.FunctionComponent<CarouselIdProp> = ({
         <ButtonNext>
           <Icon
             as={FaArrowCircleRight}
-            boxSize='3rem'
+            boxSize='2.25rem'
             color='lightOrange'
             _hover={{ color: 'primaryOrange' }}
           />

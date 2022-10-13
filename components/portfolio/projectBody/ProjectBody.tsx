@@ -22,13 +22,13 @@ const ProjectBody: React.FunctionComponent<ProjectBodyProps> = ({
       <Box
         p='1rem 0'
         position='relative'
-        top={['-1rem', '-1rem', '-2rem', '-4rem']}
+        top={['-1rem', '-1rem', '-2rem', '-3rem']}
       >
         <Box borderRadius={8} boxShadow='lg' p='1rem 2rem'>
           <Text>{details}</Text>
         </Box>
       </Box>
-      <Box w={['full', 'full', 'full', 'full', 'full', 'container.xl']}>
+      <Box w={['full', 'full', 'full', 'full', 'container.lg']}>
         <ProjectCarousel carouselId={projectId} numOfSlides={numOfSlides} />
       </Box>
     </Stack>
