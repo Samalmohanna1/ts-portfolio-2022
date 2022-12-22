@@ -70,3 +70,13 @@ body {
   border-radius: 50%;
   margin: 0 0.25rem;
 }
+
+.gameThumbnails {
+  box-shadow: 0.4rem 0.6rem 0.5rem #afafaf;
+  border: 0.5rem solid #8280ec;
+}
+
+.gameThumbnails:hover {
+  border: 0.5rem solid #fe976f;
+  box-shadow: none;
+}

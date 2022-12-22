@@ -1,5 +1,6 @@
 import { Box, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import ClickToPlay from '../click-to-play/click_to_play'
 import ProjectBody from './projectBody/ProjectBody'
 import ProjectHeader from './projectHeader/ProjectHeader'
 
@@ -100,6 +101,59 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
               details='In my last role, I built custom drop-down menus, carousel sliders, forms, and more to maintain brand consistency and provide familiar interaction for users.'
               projectId='3'
               numOfSlides={4}
+            />
+          </motion.div>
+        </Box>
+      </motion.div>
+      <Text variant='subheading24Md' color='lightPurple'>
+        Passion Projects
+      </Text>
+
+      <motion.div
+        initial={'offscreen'}
+        whileInView={'onscreen'}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ staggerChildren: 0.65 }}
+      >
+        <Box p='4rem 0'>
+          <motion.div variants={projectAnimate}>
+            <ProjectHeader
+              title='FishyFishy'
+              role='Designer & Developer'
+              date='2022'
+              brief='FishyFishy is an arcade style game where the player has two minutes to eat as many fish as possible. Eating the wrong fish will end the game.'
+            />
+          </motion.div>
+          <motion.div variants={projectAnimate}>
+            <ClickToPlay
+              imgUrl='games/fishyfishy.png'
+              imgAlt='Link to game title: fishy fishy.'
+              gameUrl='https://sleepy-sam.itch.io/fishyfishy'
+            />
+          </motion.div>
+        </Box>
+      </motion.div>
+      <motion.div
+        initial={'offscreen'}
+        whileInView={'onscreen'}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ staggerChildren: 0.65 }}
+      >
+        <Box p='4rem 0'>
+          <motion.div variants={projectAnimate}>
+            <ProjectHeader
+              title='Bat out of Hell'
+              role='Designer & Developer'
+              date='2022'
+              brief='Welcome to Hell
+              The only way out is to earn your way out. Collect all the coins and jewels to reach the top of "The Bat Race" leaderboard to be considered for release.'
+            />
+          </motion.div>
+          <motion.div variants={projectAnimate}>
+            <ClickToPlay
+              imgUrl='games/booh.png'
+              imgAlt='Link to game title: Bat out of Hell.'
+              gameUrl='https://sleepy-sam.itch.io/bat-out-of-hell'
             />
           </motion.div>
         </Box>
