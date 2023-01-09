@@ -121,7 +121,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
               title='FishyFishy'
               role='Designer & Developer'
               date='2022'
-              brief='FishyFishy is an arcade style game where the player has two minutes to eat as many fish as possible. Eating the wrong fish will end the game.'
+              brief="FishyFishy is an arcade style game I designed for Github's Game Off 2022. For this game jam, I had one month to build a game from scratch and the theme was Cliches. I built this game in GDevelop, illustrated and animated all graphics, and used free sfx and music. Game concept: The player has two minutes to eat as many fish as possible. Eating the wrong fish will end the game. Easy, right?"
             />
           </motion.div>
           <motion.div variants={projectAnimate}>
@@ -145,7 +145,7 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
               title='Bat out of Hell'
               role='Designer & Developer'
               date='2022'
-              brief='Welcome to Hell
+              brief='I designed Bat out of Hell for ScoreSpace Jam #23. This was a 3 day game jam, where we had to build a game from scratch and the top requirement was to include a leaderboard. I built this game in GDevelop, illustrated and animated all graphics, and used free/paid sfx and music. Game concept: Welcome to Hell.
               The only way out is to earn your way out. Collect all the coins and jewels to reach the top of "The Bat Race" leaderboard to be considered for release.'
             />
           </motion.div>
