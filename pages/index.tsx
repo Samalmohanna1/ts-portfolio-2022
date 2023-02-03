@@ -29,7 +29,6 @@ const Home: NextPage = () => {
         <title>Sam Almohanna | Creative Developer</title>
         <link rel='icon' href='/favicon.svg' />
       </Head>
-
       <Content />
     </div>
   )

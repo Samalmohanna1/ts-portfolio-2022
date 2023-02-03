@@ -1,5 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700;800&family=Yeseva+One&display=swap'); */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body::-webkit-scrollbar {
   width: 0.7rem;
 }
@@ -73,10 +79,10 @@ body {
 
 .gameThumbnails {
   box-shadow: 0.4rem 0.6rem 0.5rem #afafaf;
-  border: 0.5rem solid #8280ec;
+  border: 0.35rem solid #8280ec;
 }
 
 .gameThumbnails:hover {
-  border: 0.5rem solid #fe976f;
+  border: 0.35rem solid #fe976f;
   box-shadow: none;
 }

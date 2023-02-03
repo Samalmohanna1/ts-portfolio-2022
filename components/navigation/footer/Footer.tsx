@@ -84,7 +84,7 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
             </Link>
           </Stack>
           <Text color='white' textAlign='center'>
-            © 2022 - Sam Almohanna
+            © 2023 - Sam Almohanna
           </Text>
         </Box>
       </Stack>
