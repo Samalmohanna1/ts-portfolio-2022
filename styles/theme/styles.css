@@ -86,3 +86,13 @@ body {
   border: 0.35rem solid #fe976f;
   box-shadow: none;
 }
+
+.heroThumbnails {
+  box-shadow: 0.2rem 0.3rem 2rem #797979;
+  border: 0.35rem solid #1a202c;
+}
+
+.heroThumbnails:hover {
+  border: 0.35rem solid #fffcf2;
+  box-shadow: none;
+}

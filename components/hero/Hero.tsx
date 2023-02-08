@@ -1,5 +1,4 @@
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import ClickToPlay from '../click-to-play/click_to_play'
@@ -8,22 +7,6 @@ interface HeroProps {}
 
 const Hero: React.FunctionComponent<HeroProps> = () => {
   const [ready, setReady] = useState(false)
-
-  const projectAnimate = {
-    offscreen: {
-      y: 100,
-      opacity: 0,
-    },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: 'spring',
-        bounce: 0.4,
-        duration: 1,
-      },
-    },
-  }
 
   useEffect(() => {
     setReady(true)
@@ -71,18 +54,14 @@ const Hero: React.FunctionComponent<HeroProps> = () => {
             </Box>
           )}
         </Box>
-        <Box
-          maxW='28rem'
-          position='relative'
-          display={['none', 'none', 'flex']}
-        >
-          <motion.div variants={projectAnimate}>
+        <Box maxW='28rem' display={['none', 'none', 'grid']}>
+          <Box position='relative'>
             <Text
               variant='subheading18Bd'
               position='absolute'
               bottom='20%'
-              color='lightCream'
-              backgroundColor='lightPurple'
+              color='softBlack'
+              backgroundColor='lightCream'
               padding='.5rem 2rem'
             >
               Visit My Scroll Animated Portfolio Site
@@ -90,9 +69,28 @@ const Hero: React.FunctionComponent<HeroProps> = () => {
             <ClickToPlay
               imgUrl='3d-intro.webp'
               imgAlt='Link to 3d animated portfolio.'
-              gameUrl='https://gsap-portfolio-2023.vercel.app/'
+              linkUrl='https://gsap-portfolio-2023.vercel.app/'
+              thumbnailClass='heroThumbnails'
             />
-          </motion.div>
+          </Box>
+          <Box position='relative'>
+            <Text
+              variant='subheading18Bd'
+              position='absolute'
+              bottom='20%'
+              color='softBlack'
+              backgroundColor='lightCream'
+              padding='.5rem 2rem'
+            >
+              Visit My 3D Virtual Gallery
+            </Text>
+            <ClickToPlay
+              imgUrl='3d.jpg'
+              imgAlt='Link to 3d Virtual Gallery.'
+              linkUrl='https://sam-3d-gallery.vercel.app/'
+              thumbnailClass='heroThumbnails'
+            />
+          </Box>
         </Box>
       </Flex>
     </div>

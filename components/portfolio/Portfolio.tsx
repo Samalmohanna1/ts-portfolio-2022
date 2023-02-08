@@ -128,7 +128,8 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
             <ClickToPlay
               imgUrl='games/fishyfishy.png'
               imgAlt='Link to game title: fishy fishy.'
-              gameUrl='https://sleepy-sam.itch.io/fishyfishy'
+              linkUrl='https://sleepy-sam.itch.io/fishyfishy'
+              thumbnailClass='gameThumbnails'
             />
           </motion.div>
         </Box>
@@ -153,7 +154,8 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
             <ClickToPlay
               imgUrl='games/booh.png'
               imgAlt='Link to game title: Bat out of Hell.'
-              gameUrl='https://sleepy-sam.itch.io/bat-out-of-hell'
+              linkUrl='https://sleepy-sam.itch.io/bat-out-of-hell'
+              thumbnailClass='gameThumbnails'
             />
           </motion.div>
         </Box>
