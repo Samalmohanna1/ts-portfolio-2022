@@ -80,6 +80,7 @@ body {
 .gameThumbnails {
   box-shadow: 0.4rem 0.6rem 0.5rem #afafaf;
   border: 0.35rem solid #8280ec;
+  border-radius: 2rem;
 }
 
 .gameThumbnails:hover {
@@ -90,6 +91,7 @@ body {
 .heroThumbnails {
   box-shadow: 0.2rem 0.3rem 2rem #797979;
   border: 0.35rem solid #1a202c;
+  border-radius: 2rem;
 }
 
 .heroThumbnails:hover {

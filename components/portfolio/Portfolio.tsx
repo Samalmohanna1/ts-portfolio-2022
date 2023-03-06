@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Image, Link, Stack, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import ClickToPlay from '../click-to-play/click_to_play'
 import ProjectBody from './projectBody/ProjectBody'
@@ -121,16 +121,77 @@ This tool dynamically builds hundreds of landing pages that are unique by vehicl
               title='FishyFishy'
               role='Designer & Developer'
               date='2022'
+              link='https://sleepy-sam.itch.io/fishyfishy'
               brief="FishyFishy is an arcade style game I designed for Github's Game Off 2022. For this game jam, I had one month to build a game from scratch and the theme was Cliches. I built this game in GDevelop, illustrated and animated all graphics, and used free sfx and music. Game concept: The player has two minutes to eat as many fish as possible. Eating the wrong fish will end the game. Easy, right?"
             />
           </motion.div>
           <motion.div variants={projectAnimate}>
-            <ClickToPlay
-              imgUrl='games/fishyfishy.png'
-              imgAlt='Link to game title: fishy fishy.'
-              linkUrl='https://sleepy-sam.itch.io/fishyfishy'
-              thumbnailClass='gameThumbnails'
-            />
+            <Stack
+              direction={['column', 'column', 'column', 'row']}
+              gap='2rem'
+              justifyContent='space-evenly'
+            >
+              <Box position='relative'>
+                <Box position='absolute' bottom='0' right='20%'>
+                  <Box position='relative'>
+                    <Box position='absolute' w='70%' left='15%' top='10%'>
+                      <Image
+                        src='games/fishyfishy/fishy-gif.gif'
+                        alt=''
+                        maxWidth='800px'
+                        width='100%'
+                        className=''
+                      />
+                    </Box>
+                    <Image
+                      src='games/fishyfishy/pixel.svg'
+                      alt=''
+                      maxWidth='800px'
+                      width='100%'
+                      className=''
+                    />
+                  </Box>
+                </Box>
+                <Image
+                  src='games/fishyfishy/iPad.svg'
+                  alt=''
+                  maxWidth='800px'
+                  width='100%'
+                  className=''
+                />
+              </Box>
+              <Stack justifyContent='center' alignItems='center' gap='2rem'>
+                <Image
+                  src='games/fishyfishy/fishyfishy.png'
+                  alt=''
+                  maxWidth='600px'
+                  width='100%'
+                  borderRadius='2rem'
+                  className=''
+                />
+                <Stack
+                  direction={['column', 'column', 'column', 'row']}
+                  justifyContent='center'
+                  alignItems='center'
+                >
+                  <Text variant='subheading24Bd' textAlign='center'>
+                    Available now on Google Play!
+                  </Text>
+                  <Link
+                    href='https://play.google.com/store/apps/details?id=com.SleepySam.FishyFishy'
+                    isExternal
+                  >
+                    <Image
+                      src='games/fishyfishy/playstore-btn.svg'
+                      alt='google playstore button'
+                      maxW='200px'
+                      width='100%'
+                      className=''
+                    />
+                  </Link>
+                </Stack>
+              </Stack>
+            </Stack>
           </motion.div>
         </Box>
       </motion.div>

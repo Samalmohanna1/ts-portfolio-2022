@@ -23,12 +23,21 @@ const ClickToPlay: React.FunctionComponent<ClickToPlayProps> = ({
         <Image
           src={imgUrl}
           alt={imgAlt}
+          maxW='800px'
+          width='100%'
+          className={thumbnailClass}
+        />
+      </Link>
+      {/* <Link href={linkUrl} isExternal>
+        <Image
+          src={imgUrl}
+          alt={imgAlt}
           maxW='1000px'
           width='100%'
           borderRadius='2rem'
           className={thumbnailClass}
         />
-      </Link>
+      </Link> */}
     </Stack>
   )
 }
